@@ -32,6 +32,7 @@
   - git add *
   - git commit -m "comentário do objetivo sobre a alteração"
   - git push (emprurrar/ enviar alterações para o repositório)
+  - git pull (puxar / puxar alterações do Repositório para a máquina)
 
 ## GitFlow
  - Fluxo do GIT
