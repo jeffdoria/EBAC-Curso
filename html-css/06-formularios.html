@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title> Jefferson Doria Santos</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+		
+		<!-- Estilos Personalizados -->
+		<link rel="stylesheet" href="./assets/css/reset-meyer.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	</head>
+<body>
+	<header>
+		<h1>Curso FrontEnd</h1>
+		<h5>Escola Britânica de Artes Criativas e Tecnologia</h5>
+	</header>
+	<div class="container">
+	<nav>
+		<ul class="navegacao">
+			<li><a href="/">Homepage</a></li>
+			<li><a href="07-tabela.html">Tabelas</a></li>
+			<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+			<li><a href="05-layouts.html">Layouts</a></li>
+			<li><a href="06-formularios.html">Formulários</a></li>
+		</ul>
+		<h3>Redes Sociais</h3>
+		<ul>
+			<li class="navegacao"><a href="https://www.linkedin.com/in/cavalcantemarcelo/jdoriadev">LinkedIn</a></li>
+			<li><a href="https://www.instagram.com/jefdoria/">@jefdoria</a></li>
+		</ul>
+	</nav>
+	<main>
+		<article>
+			<div class="convite">
+				<h1>Venha tomar um café conosco</h1>
+				<img src="./assets/images/cafe.gif">
+			</div>
+
+			<form method="post">
+				<div>
+					<h2>Preencha os campos abaixo</h2><br>
+					<label for="nome">Nome</label>
+					<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+				</div>
+				<div>
+					<label for="email">E-mail</label>
+					<input type="email" name="email" id="email" placeholder="Digite seu email">
+				</div>
+				<div>
+					<label for="mensagem">Mensagem</label>
+					<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+				</div>
+				<div>
+					<p>
+						<label>Qual linguagem você prefere?</label>
+						<input type="radio" name="linguagens" value="html"> HTML
+						<input type="radio" name="linguagens" value="css"> CSS
+						<input type="radio" name="linguagens" value="javascript"> JavaScript
+					</p>
+				</div>
+				<div>
+					<p>
+						<label>Quais linguagens você sabe?</label>
+						<input type="checkbox" name="linguagens" value="html"> HTML
+						<input type="checkbox" name="linguagens" value="css"> CSS
+						<input type="checkbox" name="linguagens" value="javascript"> JavaScript
+					</p>
+				</div>
+				<div>
+					<label>Qual a sua cor favorita?</label>
+					<select>
+						<option value="Azul">Azul</option>
+						<option value="Verde">Verde</option>
+						<option value="Vermelho" selected>Vermelho</option>
+					</select>
+				</div>
+
+				<div>
+					<input type="submit">
+				</div>
+
+
+			</form>
+
+
+
+		</article>
+	</main>
+</div>
+	<footer>
+		<p>Jefferson Doria Santos</p>
+	</footer>
+</body>
+
+</html>

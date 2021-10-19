@@ -1,0 +1,186 @@
+/* 
+
+Arquivo CSS geral com estilos dos elementos de todas páginas 
+
+*/
+
+* {
+box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 { font-weight: 700;
+padding:.675rem 0 .265rem;	
+}
+
+h1 {font-size: 2rem;}
+
+h2 {font-size: 1.3rem;}
+
+a {text-decoration: none;}
+
+p, blockquote {line-height: 1.5;}
+
+body {
+	background-color: white; font-family: 'Poppins',sans-serif;
+}
+
+header {
+	background-color: #333;
+	padding: 1.875rem;
+	text-align: center;
+	color: white;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+	nav {
+		min-width: 300px;
+		padding: 20px;
+		background-color: #66F;
+	}
+		
+		nav ul {
+		list-style-type: none;
+		padding: 0;
+		}
+			
+			nav ul li {
+				padding: 1rem;
+			}
+		
+				nav ul li a{
+					color: #fff;
+				}
+
+				nav ul li a:hover{
+					color: rgb(190, 190, 190);
+				}
+
+				@media (max-width:810px) {
+					.container {
+						flex-direction: column;
+					}
+				}
+	main{width: 100%;}
+	
+		#post p {
+		text-align: left;
+		}
+	article {
+		padding: 20px;
+		text-align: center;
+	}
+	
+
+	#content article {
+		text-align: left;
+	}
+
+		.post article {
+			text-align:left;
+		}
+
+		#sobre {
+            background: url(../images/bg.jpg) no-repeat 54% 30%;
+            margin-bottom: 2em;
+            padding: 1em;
+            text-align: center;
+        }
+
+		#sobre .perfil {
+			border-radius: 50%;
+		}
+
+		#experiencia h3, #formacao-academica h3, #certificado h3{
+			margin: 1em 0; color: #001845; font-size: 1.5em; }
+			
+		.experiencia-descri .date {
+			color: rgb(110, 110, 110);
+		}
+		
+		.experiencia-card, .formacao-academica-card, .certificado-card{
+			align-items: flex-start;
+    		border-bottom: 1px solid rgb(228, 228, 228);
+    		display: flex;
+    		flex-direction: row;
+    		justify-content: start;
+    		margin: 1em 0;
+			padding: 1em;
+		}
+		.experiencia-img, .formacao-academica-img, .certificado-img {
+			padding: .875em;
+		}
+
+		.convite {
+			display: flex;
+			align-items: center;
+			flex-wrap: no-wrap;
+			background-color: #B5D6E2;
+		}
+		
+			@media (max-width: 1103px){
+				.convite {
+					flex-wrap: wrap;
+				}
+				
+			}
+			.convite img {
+				width: 100%;
+			}
+			
+		.convite h1 {
+			text-align: left;
+			padding: 1rem 0  0 2rem;
+			font-size: 3.5rem;
+			color: #2D3538;
+			line-height: 1.2;
+		}
+
+	form {
+	background: #eee;
+	padding: 10px;
+	}
+
+		form div {
+		background: #fff;
+		border-bottom: 1px solid #33f;
+		margin: 1rem;
+		padding: 2rem;
+		}
+
+			label {
+			margin-bottom: 1rem;
+			font-size: 1.4rem; 
+			font-family: sans-serif;
+			font-weight: bold;
+			color: #66F;
+			}
+
+		input {
+		padding: 1rem;
+		}
+
+		[type="text"], [type="email"], textarea, label {
+		display: block;
+		width: 100%;
+		}
+
+footer {
+background-color: #000;
+padding: 10px;
+text-align: center;
+color: white;
+}
+
+@media (max-width: 600px) {
+	nav, article {
+		width: 100%;
+		height: auto;
+	}
+	.experiencia-card, .formacao-academica-card, .certificado-card{
+		flex-direction:column;
+	}
+}

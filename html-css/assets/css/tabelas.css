@@ -1,0 +1,40 @@
+/* TABELA */
+.table-container {
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+}
+.table-container .info {
+	display: none;
+}
+
+table, thead, tbody, tfoot, tr,td, th { border:1px solid rgb(145, 145, 145);}
+thead tr th, tbody tr td, tfoot tr td {
+	text-align: center;
+	padding: 2rem;
+}
+thead  tr {
+	background-color: #0070C3;
+	color: #fff;
+}
+tbody tr:nth-child(odd) {
+	background-color: rgb(221, 235, 255);
+}
+tbody tr:hover {
+	background-color: rgb(125, 175, 247);
+}
+
+tfoot tr {
+	background-color: yellow;
+}
+
+@media (max-width: 698px) {
+	.table-fluid{
+		width: 100%;
+		overflow: auto;
+	}
+	.table-container .info {
+		display: block;
+		color: red;
+	}
+}
