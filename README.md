@@ -1,2 +1,34 @@
-# Teste
-teste de versionament0
+# GIT
+
+
+## Versionamento
+ - Histórico
+ - Controle de versão
+ - Quem alterou
+ - O que alterou
+ - Quando alterou
+ - Todos os arquivos
+ - Evolução contínua
+
+ Arquivo A | Versão 1 | Versão 2
+ Arquivo B | Versão 1 | Versão 2
+
+
+ ## Instalação do GIT
+ - https://git.scm.com
+ - Linux (sudo apt-get install git)
+
+
+ ## Criar conta no GITHUB
+  - OK
+
+
+## Clonar Projeto
+
+
+## Commit
+   Informação de alteração
+  - Após testado todo o seu código
+
+## GitFlow
+ - Fluxo do GIT
