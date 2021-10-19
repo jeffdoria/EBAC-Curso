@@ -1,5 +1,7 @@
-# GIT
+# Curso Engenheiro Front-End EBAC
 
+
+# GIT
 
 ## Versionamento
  - Histórico
@@ -29,6 +31,9 @@
 ## Commit
    Informação de alteração
   - Após testado todo o seu código
+  - git add *
+  - git commit -m "comentário do objetivo sobre a alteração"
+  - git push (emprurrar/ enviar alterações para o repositório)
 
 ## GitFlow
  - Fluxo do GIT
