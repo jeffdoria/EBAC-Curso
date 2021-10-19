@@ -1,7 +1,5 @@
 # Curso Engenheiro Front-End EBAC
-
-
-# GIT
+### GIT
 
 ## Versionamento
  - Histórico
