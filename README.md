@@ -24,7 +24,7 @@
 
 
 ## Clonar Projeto
-
+ git clone https://github.com/jefdoria/EBAC-Curso.git 
 
 ## Commit
    Informação de alteração
@@ -32,3 +32,4 @@
 
 ## GitFlow
  - Fluxo do GIT
+ 
