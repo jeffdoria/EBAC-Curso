@@ -46,6 +46,8 @@ São ramificações / versões paralelas
 
 - versionamento 1.0
 
+### Merge
+Mescla de Brachs
 
 
  
