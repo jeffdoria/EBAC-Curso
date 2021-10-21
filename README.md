@@ -46,6 +46,10 @@ São ramificações / versões paralelas
 
 - versionamento 1.0
 
+git checkout -b dev (criar uma branch nova)
+git checkout master (mudar de branch)
+
+
 ### Merge
 Mescla de Brachs
 
