@@ -1,0 +1,68 @@
+@media screen and (max-width: 1023px) {
+  .banner-img{
+    display: none;
+  }
+
+  .form-seta {
+    display: none;
+  }
+  .logo-desk {
+    display: none;
+  }
+
+}
+@media screen and (min-width: 1024px) {
+  .header-container {
+  width: 80%;
+  margin: 0 auto;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .container {width: 80%;}
+
+  #banner {
+    text-align: left;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+
+  #banner h2 {
+    margin: 0;
+    text-align: left;
+    }
+
+  .banner-chamada {
+    padding: 0 0 0 1rem;
+  }
+
+  .banner-img {
+    padding: 1rem;
+  }
+
+  .banner-img img {
+    max-width: 580px;
+  }
+  #formulario {
+    flex-direction: row;
+  }
+  .form-seta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
+
+  .txt-interessado {
+    width: 50% ;
+  }
+
+  .form-interessado {
+    width: 50%;
+  }
+}
