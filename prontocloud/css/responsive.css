@@ -10,6 +10,14 @@
     display: none;
   }
 
+  #conteudo-home {
+    flex-direction: column;
+  }
+  .conteudo-home-img img {
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+
 }
 @media screen and (min-width: 1024px) {
   .header-container {
@@ -48,9 +56,11 @@
   .banner-img img {
     max-width: 580px;
   }
+
   #formulario {
     flex-direction: row;
   }
+  
   .form-seta {
     display: flex;
     justify-content: center;
@@ -65,4 +75,9 @@
   .form-interessado {
     width: 50%;
   }
+}
+
+@media screen and (max-width:703px) {
+  #home-banner {padding: 3rem;}
+
 }
