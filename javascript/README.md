@@ -94,4 +94,21 @@ https://developer.mozilla.org/pt-BR/docs/Web/Javascript/Guide/Expressions_and_op
 
 1. Descreva um Algoritmo para resolver o problema da travessia de modo 'seguro':
 
-Um homem precisa atravessar um rio com mum barco que possui capacidade apenas para carregar ele mesmo e mais um de seus três pertences, que são: um lobo, uma cabra e um maço de alfafa. Em cada viagem só poderá ir o homem e apenas um de seus pertences. A seguinte regra deverá ser respeitada: o lobo não pode ficar sozinho com a cabra e nem a cabra sozinha com o maço de alfafa. Escreva um algoritmo para fazer a travessia dos pertences que estão em uma margem do rio para a outra.
+Um homem precisa atravessar um rio com um barco que possui capacidade apenas para carregar ele mesmo e mais um de seus três pertences, que são: um lobo, uma cabra e um maço de alfafa. Em cada viagem só poderá ir o homem e apenas um de seus pertences. A seguinte regra deverá ser respeitada: o lobo não pode ficar sozinho com a cabra e nem a cabra sozinha com o maço de alfafa. Escreva um algoritmo para fazer a travessia dos pertences que estão em uma margem do rio para a outra.
+
+### RESPOSTA:
+//Preciso levar a cabra primeiro. preciso ir e vir mais de três vezes?(Sim). Posso voltar com item? (Preciso).
+//Fica lobo e alfafa.
+
+01. Início;
+02. cabra, lobo, alfafa;
+03. Homem pega cabra e atravessa o rio; 
+04. Homem volta;
+05. Homem pega lobo e atravessa o rio;
+06. Homem pega cabra e volta;
+07. Homem deixa cabra pega alfafa e atravessa o rio;
+08. Homem deixa alfafa e volta; 
+09. Homem pega cabra e atravessa o rio;
+10. Travessia segura realizada;
+11. Fim;
+
