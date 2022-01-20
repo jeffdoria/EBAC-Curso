@@ -32,6 +32,8 @@
 6. Exibir o resultado: print, echo, console.log;
 7. Fim;
 
+https://www.somatematica.com.br/jogos/hanoi/
+
 ## Funcionalidades gerais
 - Criar algoritmo e programas para executar no navegador: client side
 - Manipular o DOM: elementos HTML, eventos (clique, submit),estilos CSS
