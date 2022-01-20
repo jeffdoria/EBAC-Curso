@@ -37,7 +37,7 @@ https://www.somatematica.com.br/jogos/hanoi/
 ## Funcionalidades gerais
 - Criar algoritmo e programas para executar no navegador: client side
 - Manipular o DOM: elementos HTML, eventos (clique, submit),estilos CSS
- - Node.js: framework JS para back-end / runtime em JS
+- Node.js: framework JS para back-end / runtime em JS
 - Mongo.db: banco de dados em JS
 - React / Vue.js / Angular: framework JS para desenvolvimento mobile
 - React Native: framework JS para desenvolvimento mobile
@@ -99,7 +99,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/Javascript/Guide/Expressions_and_op
 Um homem precisa atravessar um rio com um barco que possui capacidade apenas para carregar ele mesmo e mais um de seus três pertences, que são: um lobo, uma cabra e um maço de alfafa. Em cada viagem só poderá ir o homem e apenas um de seus pertences. A seguinte regra deverá ser respeitada: o lobo não pode ficar sozinho com a cabra e nem a cabra sozinha com o maço de alfafa. Escreva um algoritmo para fazer a travessia dos pertences que estão em uma margem do rio para a outra.
 
 ### RESPOSTA:
-//Preciso levar a cabra primeiro. preciso ir e vir mais de três vezes?(Sim). Posso voltar com item? (Preciso).
+//Preciso levar a cabra primeiro. preciso ir e vir mais de três vezes?(Sim). Posso voltar com item? (Preciso).<br>
 //Fica lobo e alfafa.
 
 01. Início;
@@ -113,4 +113,37 @@ Um homem precisa atravessar um rio com um barco que possui capacidade apenas par
 09. Homem pega cabra e atravessa o rio;
 10. Travessia segura realizada;
 11. Fim;
+
+2. JS: Exibir média de 3 números com entradas pelo formulário HTML:
+
+ ### RESPOSTA:
+
+~~~html
+ <p>Digite  3 números  para calcular a média</p>
+ <input type="text" id="a">
+ <input type="text" id="b">
+ <input type="text" id="c">
+ <button onclick="obterMedia()">calcular média</button>
+ <div id="resultado"> </div>
+ ~~~
+
+ ~~~CSS
+ input,button {
+  display:block;
+  margin: 1em;
+}  
+~~~
+
+~~~javascript
+ function obterMedia() {
+  var a = parseInt(document.getElementById("a").value);
+  var b = parseInt(document.getElementById("b").value);
+  var c = parseInt(document.getElementById("c").value);
+
+  var media = (a + b + c)/3;
+  document.getElementById("resultado").innerHTML = "resultado: " + media;
+  }
+~~~
+
+ [Resolução] (https://jsfiddle.net/jeffdsdev/byo8wp6h/3/)
 
