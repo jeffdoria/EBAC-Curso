@@ -154,3 +154,59 @@ Um homem precisa atravessar um rio com um barco que possui capacidade apenas par
 
  [Resolução] (https://jsfiddle.net/jeffdsdev/byo8wp6h/3/)
 
+## Laços de Repetição (Loops)
+- for ([expressãoInicial]; [condição]; [incremento]){
+  
+}
+- while([condição]) {
+  [execucao]
+}
+- do{ 
+  [execução]
+} while ([condição])
+
+```
+//fazer revisão do carro aos 10km
+var km;
+var revisao = 10;
+
+for (km = 0; km < revisao; km++ ){
+    console.log("Apenas" + km "pode rodar");
+}
+
+```
+
+### Cálculo média de alunos
+
+```
+var alunos = [
+  [6,5,7,8],
+  [7,5,9,7],
+  [8,8,9,9],
+]
+
+var nota = 0
+for(var i = 0; i < alunos.length; i++){
+  
+  nota = 0
+  aluno = alunos[i];
+  console.log("Aluno: " + aluno);
+
+  for(c = 0; c < aluno.length; c++){
+    nota += aluno[c];
+  }
+  
+  media = nota / 4;
+  
+  if(media >=7){
+  resultado = "aprovado";
+  }else {
+  resultado = "reprovado"
+  }
+
+console.log("Media: " + media + " - " + resultado);
+}
+```
+
+
+
