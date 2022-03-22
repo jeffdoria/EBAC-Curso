@@ -71,15 +71,15 @@ São utilizados para referenciar espaço na memória
 - Módulo (resto de divisão) %
 - Math: random(), round(), sqrt().
 
-* Atribuição
-a = b
-a += b
-a -= b
-a *= b
-a /= b
-a %= b
+## Atribuição
+ - a = b
+ - a += b
+ - a -= b
+ - a *= b
+ - a /= b
+ - a %= b
 
-* Operadores de Comparação / Lógicos
+## Operadores de Comparação / Lógicos
 - Igual == ou ===
 - Diferente !=
 - Maior que >
