@@ -87,6 +87,13 @@ São utilizados para referenciar espaço na memória
 - Menor que ou igual <=
 - Maior que ou igual >=
 
+## Operadores de lógica e junção lógica
+- ! NOT
+- && AND
+- OR
+
+O sinal de exclamação (!) é o operador  NOT, utilizado para negar a sentença que vem na sequência.
+
 Ver mais em:
 https://developer.mozilla.org/pt-BR/docs/Web/Javascript/Guide/Expressions_and_operators
 
