@@ -208,7 +208,7 @@ console.log("Media: " + media + " - " + resultado);
 }
 ```
 
-##Javascript II
+## Javascript II
 
 ### Resolva as operações:
 
@@ -243,7 +243,7 @@ true + true = true (boolean)
 (10 + 10) * 2 = 40 (number)
 10 + 10 * 2 = 30 (number)
 
-2. Responda as perguntas de acordo com as variáveis.
+### 2. Responda as perguntas de acordo com as variáveis.
 var branco = “preto”;
 var preto = “cinza”;
 var cinza = “branco”;
@@ -266,6 +266,7 @@ R: cavalo = "cinza"
 e) Quantas prestações são necessárias para pagar o valor do carro com uma entrada
 de 3.000? Demonstre a operação.
 R: 
+~~~javascript
 let carro = 30000;
 let prestacao = 750;
 let entrada = 3000;
@@ -274,9 +275,16 @@ let prestacoes;
 carro-= entrada;
 prestacoes = carro/prestacao;
 console.log("Com a entrada de R$" + entrada + ", faltam " + prestacoes + " prestacões no valor de R$" + prestacao + " para ser pagas, totalizando: R$" + carro);
+~~~
 
 f) Somando as variáveis de cores é formada uma string de quantos caracteres?
 R:
+~~~javascript
+let branco = "preto";
+let preto = "cinza";
+let cinza = "branco";
+
 let somaCores = branco + preto + cinza;
-console.log(somaCores.length);
+console.log("A soma de caracteres das variáveis é igual a: " + somaCores.length);
+~~~
 
