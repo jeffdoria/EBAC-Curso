@@ -288,7 +288,7 @@ let somaCores = branco + preto + cinza;
 console.log("A soma de caracteres das variáveis é igual a: " + somaCores.length);
 ~~~
 
-## Javascript II
+## Javascript III
 
 ### DOM
 - Document Object Model
