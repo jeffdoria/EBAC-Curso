@@ -286,6 +286,82 @@ let cinza = "branco";
 
 let somaCores = branco + preto + cinza;
 console.log("A soma de caracteres das variáveis é igual a: " + somaCores.length);
-
 ~~~
 
+## Javascript II
+
+### DOM
+- Document Object Model
+- Estrutura de um arquivo na web
+- Representa documentos HTML ou XML
+- Interface de programação
+- É essencial para o JS entender o modelo de páginas web
+
+### Para que serve?
+- Alterar a estrutura
+- Alterar o estilo
+- Alterar o conteúdo
+
+### Como
+- Disponibilizando API (Appplicatio Programming Interface)
+- Rotinas e padões estabelecidos
+- Métodos (funções)
+- Árvore de elementos
+- Seletores
+- Objetos (nós/ nodes)
+
+### Exemplo HTML:
+```
+<html>
+	<head></head>
+	<body></body>
+</html>
+
+```
+### Exemplo Obj:
+```
+objeto = {
+	html : {
+		head : {},
+		body : {
+			h1 : {
+			
+			}
+		}
+	}
+}
+ 
+```
+
+### DOM x JS
+- O DOM pode ser usado por outras linguagens
+- sem o DOM o JS não teria noção da página
+
+### Vantagens de usar Javascript
+- Código é executado por navegadores
+- Tornar as págias dinâmicas
+- Evitar Requisições desnecessárias (performance)
+- SPA (SIngle Page Applications)
+- Reagir rapidamente as ações dos usuários
+
+### Desvantagens de usar o Javascript
+- Código é executado por navegadore
+- O conteúdo NÃO fica visível para indexadores de busca
+- Alterações em tempo de execução não ficam salvas no documento
+
+### Exemplos de como o DOM disponibiliza os métodos (callback)
+Seleciona o objeti e disponibiliza (métodos / funções).callback
+
+- document.getElementByID(id)
+- document.getElementsByTagName('div')
+- document.createElement('div')
+- parentNode.appendChild(node) // html.appendChild('body')
+- element.innerHTML
+- element.style
+- element.setAttribute('name')
+- element.getAttribute('name')
+- element.addEventListener()
+- window.location
+- window.onload (en-US)
+- console.log()
+- window.scrollTo()
