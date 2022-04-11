@@ -375,3 +375,9 @@ Seleciona o objeto e disponibiliza (métodos / funções).callback
 - getElementsByClassName()
 
 ## Formulários
+- Precisamos evitar que o usuário passe dados incorretos
+- Ou seja, para direcionar melhor o uso do nosso sistema
+- Preteger a injeção de código malicioso
+- Evitar erros de processamento
+- Formatar dados para facilitar o processamento
+- Regex (expressões regulares)
