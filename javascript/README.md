@@ -1,4 +1,4 @@
-#Javascript
+# Javascript
 - Estado do JS (https://2020.stateofjs.com/en-US/technologies/)
 - Onde  é executado
 - Omnipresente na web
@@ -208,9 +208,9 @@ console.log("Media: " + media + " - " + resultado);
 }
 ```
 
-## Javascript II
+# Javascript II
 
-### Resolva as operações:
+## Resolva as operações:
 
 - 10 + 15 = 25 (number)
 - “10” + 2 = 102 (number)
@@ -243,7 +243,7 @@ console.log("Media: " + media + " - " + resultado);
 - (10 + 10) * 2 = 40 (number)
 - 10 + 10 * 2 = 30 (number)
 
-### 2. Responda as perguntas de acordo com as variáveis.
+## 2. Responda as perguntas de acordo com as variáveis.
 var branco = “preto”;
 var preto = “cinza”;
 var cinza = “branco”;
@@ -288,9 +288,9 @@ let somaCores = branco + preto + cinza;
 console.log("A soma de caracteres das variáveis é igual a: " + somaCores.length);
 ~~~
 
-## Javascript III
+# Javascript III
 
-### DOM
+## DOM
 - Document Object Model
 - Estrutura de um arquivo na web
 - Representa documentos HTML ou XML
@@ -350,7 +350,7 @@ objeto = {
 - Alterações em tempo de execução não ficam salvas no documento
 
 ### Exemplos de como o DOM disponibiliza os métodos (callback)
-Seleciona o objeti e disponibiliza (métodos / funções).callback
+Seleciona o objeto e disponibiliza (métodos / funções).callback
 
 - document.getElementByID(id)
 - document.getElementsByTagName('div')
@@ -364,4 +364,14 @@ Seleciona o objeti e disponibiliza (métodos / funções).callback
 - window.location
 - window.onload (en-US)
 - console.log()
-- window.scrollTo()
+- window.scrollTo(x,y)
+
+### Seletores 
+- Tipos de seletores
+- callback
+- getElementById()
+- getElementsByTagName()
+- getElementByName()
+- getElementsByClassName()
+
+## Formulários
