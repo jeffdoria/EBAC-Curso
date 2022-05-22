@@ -341,7 +341,7 @@ objeto = {
 - Código é executado por navegadores
 - Tornar as págias dinâmicas
 - Evitar Requisições desnecessárias (performance)
-- SPA (SIngle Page Applications)
+- SPA (Single Page Applications)
 - Reagir rapidamente as ações dos usuários
 
 ### Desvantagens de usar o Javascript
