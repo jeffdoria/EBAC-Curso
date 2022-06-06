@@ -46,7 +46,7 @@ textarea {
 }
 
 #recursos {
-    background-image: url(/projeto/bg-svg/Animated.svg);
+    background-image: url(../bg-svg/Animated.svg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 4.6em;
