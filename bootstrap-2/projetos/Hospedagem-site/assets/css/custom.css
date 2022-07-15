@@ -1,0 +1,92 @@
+body {
+    font-family: 'Comfortaa', cursive !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Prompt', sans-serif !important;
+    font-weight: 600;
+}
+
+.text-price{
+    color: #a644e5;
+}
+
+.mn-2 {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.bg-light{
+    background-color: rgba(255, 255, 255, 0.801) !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: #f0f7fc!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    font-weight: 700;
+}
+
+#nuvi-carousel {
+    margin-top: 4.6em;
+}
+
+#sobre{
+    background: #0073ec;
+}
+
+#recursos {
+    background-image: url(../bg-svg/Animated.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 4.6em;
+}
+
+/* Animações */
+.zoom {
+    transition: transform .2s;
+    box-shadow: 0; 
+  }
+  
+  .zoom:hover {
+    box-shadow: 0px 0px 15px 4px rgba(158,158,158,0.65);
+    transform: scale(1.1); 
+    z-index:2;
+  }
+
+/* Fim Animações */
+
+#back-to-top {
+    background-color: #6610f2;
+    border-radius: 65px;
+    bottom: 14px;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+    color: whitesmoke;
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 22px;
+    width: 40px;
+    z-index: 3;
+}
+
+#back-to-top::after {
+    content: '↑';
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    padding-top: 10px;
+}
