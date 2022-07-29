@@ -20,6 +20,7 @@
         $(document).ready(function(){
             $("#cep").mask("99999-999");
             $("#telefone").mask("99 99999-9999");
+            // required: $("form *").attr("required","required");
         });
         </script>
 </head>
@@ -158,7 +159,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" type="text" name="nome" id="nome" placeholder="digite seu nome" requerid>
+                                        <input class="form-control" type="text" name="nome" id="nome" placeholder="digite seu nome" required>
                                         <label for="nome">Nome</label>
                                     </div>
                                 </div>
@@ -180,13 +181,13 @@
                             <div class="row">
                                 <div class="col-12 col-md-9">
                                     <div class="form-floating mb-3">
-                                        <input type="text" id="endereco" class="form-control" placeholder="Rua/Avenida" requerid>
+                                        <input type="text" id="endereco" class="form-control" placeholder="Rua/Avenida" required>
                                         <label for="endereco">Rua/Avenida</label>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-3">
                                     <div class="form-floating mb-3">
-                                        <input type="number" id="endNum" class="form-control" placeholder="Endereço completo" requerid>
+                                        <input type="number" id="endNum" class="form-control" placeholder="Endereço completo" required>
                                         <label for="endNum">Número</label>
                                     </div>
                                 </div>
@@ -195,13 +196,13 @@
                                 
                                 <div class="col-12 col-md-6">
                                     <div class="form-floating mb-3">
-                                        <input type="text" id="bairro" class="form-control" placeholder="Endereço bairro" requerid>
+                                        <input type="text" id="bairro" class="form-control" placeholder="Endereço bairro" required>
                                         <label for="bairro">Bairro</label>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-floating mb-3">
-                                        <input type="text" id="complemento" class="form-control" placeholder="Endereço complemento" requerid>
+                                        <input type="text" id="complemento" class="form-control" placeholder="Endereço complemento" required>
                                         <label for="complemento">Complemento</label>
                                     </div>
                                 </div>
@@ -210,7 +211,7 @@
                             <div class="row">
                                 <div class="col-12 col-md-4">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="cidade" placeholder="Cidade" requerid>
+                                        <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
                                         <label for="cidade">Cidade</label>
                                       </div>
                                 </div>
@@ -227,7 +228,7 @@
                                 </div>
                                 <div class="col-12 col-md-4">
                                 <div class=" form-floating mb-3">
-                                    <input type="text" name="cep" maxlength="9" class="form-control" id="cep" placeholder="CEP" requerid>
+                                    <input type="text" name="cep" maxlength="9" class="form-control" id="cep" placeholder="CEP" required>
                                     <label for="cep">CEP</label>
                                 </div>
                                 </div>
