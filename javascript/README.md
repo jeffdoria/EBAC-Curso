@@ -381,3 +381,9 @@ Seleciona o objeto e disponibiliza (métodos / funções).callback
 - Evitar erros de processamento
 - Formatar dados para facilitar o processamento
 - Regex (expressões regulares)
+
+##Referências
+- DOM: https://dom.spec.whatwg.org/
+- Tecnologias JS: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/JavaScript_technologies_overview
+- Motores de execução: https://pt.wikipedia.org/wiki/Lista_de_motores_de_renderiza%C3%A7%C3%A3o
+- Expressões Regulares: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions
