@@ -367,7 +367,7 @@ Seleciona o objeto e disponibiliza (métodos / funções).callback
 - window.scrollTo(x,y)
 
 ### Seletores 
-- Tipos de seletores
+- Tipos de seletores: Tag, ID, Class, Name, Query
 - callback
 - getElementById()
 - getElementsByTagName()
