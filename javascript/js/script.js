@@ -10,7 +10,6 @@ function calcularMedia( notas ) {
     return media;
 
 }
-
 let media; // escopo global
 
 function aprovacao( notas ) {

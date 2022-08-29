@@ -380,7 +380,7 @@ Seleciona o objeto e disponibiliza (métodos / funções).callback
 - Preteger a injeção de código malicioso
 - Evitar erros de processamento
 - Formatar dados para facilitar o processamento
-- Regex (expressões regulares)
+- Regex (expressões regulares )
 
 ##Referências
 - DOM: https://dom.spec.whatwg.org/
