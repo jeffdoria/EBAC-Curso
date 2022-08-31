@@ -143,10 +143,33 @@ function validaEmail(elemento){
 
 }
 
+function validaUf(elemento){
+
+    elemento.addEventListener('focusout', function(event) {
+
+        event.preventDefault();
+
+        const ufValido = /\W\b(A[CLPM]|BA|CE|DF|GO|ES|M[ATSG]|P[ABREI]|R[JNSOR]|S[PCE]|TO)\W/g;//so pode 2 caracteres em letras maiúsculas
+        if(this.value.match(ufValido)) {
+            document.querySelector('.mensagem').innerHTML = "";
+            this.classList.remove('erro');
+            this.parentNode.classList.remove('erro');
+        } else {
+            document.querySelector('.mensagem').innerHTML = "verifique o preenchimento dos campos em destaque";
+            this.classList.add('erro');
+            this.parentNode.classList.add('erro');
+            return false;
+        }
+
+    });
+
+}
+
 
 let camposObrigatorios = document.querySelectorAll('input.obrigatorio');
 let camposNumericos = document.querySelectorAll('input.numero');
 let camposEmail = document.querySelectorAll('input.email');
+let campoUf = document.querySelectorAll('input.uf');
 
 for( let emFoco of camposObrigatorios) {
     validaCampo(emFoco);
@@ -158,4 +181,8 @@ for( let emFoco of camposNumericos) {
 
 for( let emFoco of camposEmail) {
     validaEmail(emFoco);
+}
+
+for( let emFoco of campoUf) {
+    validaUf(emFoco);
 }
