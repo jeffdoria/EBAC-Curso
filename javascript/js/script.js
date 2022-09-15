@@ -149,7 +149,7 @@ function validaUf(elemento){
 
         event.preventDefault();
 
-        const ufValido = /\W\b(A[CLPM]|BA|CE|DF|GO|ES|M[ATSG]|P[ABREI]|R[JNSOR]|S[PCE]|TO)\W/g;//so pode 2 caracteres em letras maiúsculas
+        const ufValido = /[A-Z]{2}/ 
         if(this.value.match(ufValido)) {
             document.querySelector('.mensagem').innerHTML = "";
             this.classList.remove('erro');
