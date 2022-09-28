@@ -2,7 +2,27 @@
 // jQuery( function($){
 $(document).ready(function(){
 
-    $('.owl-carousel').owlCarousel();
+   $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:3,
+              nav:false
+          },
+          1000:{
+              items:3,
+              nav:true,
+              loop:false
+          }
+      }
+  })
+
 
     let titulos = $('h4') // tag
    
@@ -14,9 +34,11 @@ $(document).ready(function(){
 
     // Configuração de produtos
 
-    $('.featured-item a').addClass('btn btn-dark stretch-link');
+    $('.owl-nav').addClass('d-flex justify-content-evenly fs-1');
+    $('.featured-item').addClass('position-relative');
+    $('.featured-item a').addClass('btn btn-success d-grid gap-2');
 
-    $('.featured-item:first h4').append('<span class="badge bg-secondary">Novo</span>')
+    $('.featured-item:first').append('<div class="position-absolute top-0 start-0  m-2"><span class="badge bg-danger fs-6">Novo</span></div>')
     // $('.featured-item:first h4').start('<span class="badge bg-secondary">Novo</span>')
     // $('.featured-item:first h4').html('<span class="badge bg-secondary">Novo</span>')
     // $('.featured-item:first h4').addClass('active')

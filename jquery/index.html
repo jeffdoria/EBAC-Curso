@@ -14,34 +14,31 @@
     <title>jQuery</title>
 </head>
 <body>
-    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="assets/images/header-logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+              </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home
-                            <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Produtos</a>
+                        <a class="nav-link" href="index.html#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Sobre nós</a>
+                        <a class="nav-link" href="index.html#about">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contato</a>
+                        <a class="nav-link" href="index.html#contato">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
-    
+    </nav>   
     <div class="banner">
         <div class="container">
             <div class="row">
@@ -62,88 +59,144 @@
                 <div class="col-md-12">
                     <div class="section-heading">
                         <div class="line-dec"></div>
-                        <h1>Destaques</h1>
+                        <h1 id="produtos">Produtos</h1>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="owl-carousel owl-theme">
-                        <div class="featured-item">
-                            <img src="assets/images/item-01.jpg" alt="Item 1">
-                            <h4>Produto 1</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
+                        <div class="featured-item m-2">
+                            <img class="zoom" src="assets/images/item-01.jpg" alt="Item 1">
+                            <div class="featured-content">
+                                <h3 class="h5 mb-0 pt-2 text-uppercase"><strong>Produto 1</strong></h3>
+                                <h4 class="h6 mt-3" class="mb-2">R$ 20,00</h4>
+                                <a href="single-product.html">Comprar</a>
+                            </div>
                         </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-02.jpg" alt="Item 2">
-                            <h4>Produto 2</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
+                        <div class="featured-item m-2">
+                            <img class="zoom" src="assets/images/item-02.jpg" alt="Item 2">
+                            <div class="featured-content">
+                                <h3 class="h5 mb-0 pt-2 text-uppercase">Produto 2</h3>
+                                <h4 class="h6 mt-3" class="mb-2">R$ 20,00</h4>
+                                <a href="single-product.html">Comprar</a>
+                            </div>
                         </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-03.jpg" alt="Item 3">
-                            <h4>Produto 3</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
+                        <div class="featured-item m-2">
+                            <img class="zoom" src="assets/images/item-03.jpg" alt="Item 3">
+                            <div class="featured-content">
+                                <h3 class="h5 mb-0 pt-2 text-uppercase">Produto 3</h3>
+                                <h4 class="h6 mt-3" class="mb-2">R$ 20,00</h4>
+                                <a href="single-product.html">Comprar</a>
+                            </div>
                         </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-04.jpg" alt="Item 4">
-                            <h4>Produto 4</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
+                        <div class="featured-item m-2">
+                            <img class="zoom" src="assets/images/item-04.jpg" alt="Item 4">
+                            <div class="featured-content">
+                                <h3 class="h5 mb-0 pt-2 text-uppercase">Produto 4</h3>
+                                <h4 class="h6 mt-3" class="mb-2">R$ 20,00</h4>
+                                <a href="single-product.html">Comprar</a>
+                            </div>
                         </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-05.jpg" alt="Item 5">
-                            <h4>Produto 5</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
+                        <div class="featured-item m-2">
+                            <img class="zoom" src="assets/images/item-05.jpg" alt="Item 5">
+                            <div class="featured-content">
+                                <h3 class="h5 mb-0 pt-2 text-uppercase">Produto 5</h3>
+                                <h4 class="h6 mt-3" class="mb-2">R$ 20,00</h4>
+                                <a href="single-product.html">Comprar</a>
+                            </div>
                         </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-06.jpg" alt="Item 6">
-                            <h4>Produto 6</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
+                        <div class="featured-item m-2">
+                            <img class="zoom" src="assets/images/item-06.jpg" alt="Item 6">
+                            <div class="featured-content">
+                                <h3 class="h5 mb-0 pt-2 text-uppercase">Produto 6</h3>
+                                <h4 class="h6 mt-3" class="mb-2">R$ 20,00</h4>
+                                <a href="single-product.html">Comprar</a>
+                            </div>
                         </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-04.jpg" alt="Item 7">
-                            <h4>Produto 7</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
+                        <div class="featured-item m-2">
+                            <img class="zoom" src="assets/images/item-04.jpg" alt="Item 7">
+                            <div class="featured-content">
+                                <h3 class="h5 mb-0 pt-2 text-uppercase">Produto 7</h3>
+                                <h4 class="h6 mt-3" class="mb-2">R$ 20,00</h4>
+                                <a href="single-product.html">Comprar</a>
+                            </div>
                         </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-05.jpg" alt="Item 8">
-                            <h4>Produto 8</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
+                        <div class="featured-item m-2">
+                            <img class="zoom" src="assets/images/item-05.jpg" alt="Item 8">
+                            <div class="featured-content">
+                                <h3 class="h5 mb-0 pt-2 text-uppercase">Produto 8</h3>
+                                <h4 class="h6 mt-3" class="mb-2">R$ 20,00</h4>
+                                <a href="single-product.html">Comprar</a>
+                            </div>
                         </div>
-                        <div class="featured-item">
-                            <img src="assets/images/item-06.jpg" alt="Item 9">
-                            <h4>Produto 9</h4>
-                            <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
-                                Comprar
-                            </a>
+                        <div class="featured-item m-2">
+                            <img class="zoom" src="assets/images/item-06.jpg" alt="Item 9">
+                            <div class="featured-content">
+                                <h3 class="h5 mb-0 pt-2 text-uppercase">Produto 9</h3>
+                                <h4 class="h6 mt-3" class="mb-2">R$ 20,00</h4>
+                                <a href="single-product.html">Comprar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Sobre Nós</h1>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p>
+                        A <strong>roupas</strong> é mais que uma loja de roupas e acessórios.
+                        Temos por principal missão oferecer roupas
+                        incríveis
+                        e de qualidade a um preço acessível, deixando nossas clientes ainda mais
+                        lindas. A marca consegue vestir gerações
+                        e os mais variados estilos, gerando uma experiência única de compra,
+                        sempre buscando tendências e novidades no
+                        mercado da moda.
+                      </p>
+                      <p>
+                        Durante anos consolidamos nossa marca por meio da nossa loja física, e
+                        então decidimos que devíamos às nossas
+                        clientes o meio de compra online, com toda comodidade do e-commerce, mas
+                        sem perder toda nossa qualidade e o
+                        cuidado que sempre tivemos!
+                      </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="bg-light my-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <div class="section-heading m-0">
+                        <div class="line-dec mx-auto"></div>
+                        <h1>Contato</h1>
+                        <p>Insira seus dados abaixo para entrar em contato conosco</p>
+                    </div>
+                    <div class="main-content mt-2">
+                        <form id="subscribe" class="form" action="" method="get">
+                            <div class="row">
+                                <div class="col-12 col-md-8 mx-auto">
+                                    <div class="input-group mb-3">
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Insira seu melhor e email" aria-label="Insira seu melhor e email" aria-describedby="button-addon2" required>
+                                        <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+                                      </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <div class="footer">
         <div class="container">
