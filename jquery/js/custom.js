@@ -37,7 +37,6 @@ $(document).ready(function(){
     $('.owl-nav').addClass('d-flex justify-content-evenly fs-1');
     $('.featured-item').addClass('position-relative');
     $('.featured-item a').addClass('btn btn-success d-grid gap-2');
-
     $('.featured-item:first').append('<div class="position-absolute top-0 start-0  m-2"><span class="badge bg-danger fs-6">Novo</span></div>')
     // $('.featured-item:first h4').start('<span class="badge bg-secondary">Novo</span>')
     // $('.featured-item:first h4').html('<span class="badge bg-secondary">Novo</span>')

@@ -203,7 +203,10 @@ div.zoom a {text-decoration: none;}
 	margin: 0px 5px;
 	outline: none;
 }
-
+.owl-nav {
+	display: none!important;
+	overflow: hidden!important;
+}
 
 
 /* Subscribe Style */
