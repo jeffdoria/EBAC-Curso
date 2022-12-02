@@ -30,10 +30,10 @@
                         <a class="nav-link" href="index.html#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#about">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="#" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#contato">Contato</a>
+                        <a class="nav-link nav-modal-open" href="#" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -141,7 +141,7 @@
             </div>
         </div>
     </div>
-    <section id="about">
+    <section id="sobre-nos">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -172,7 +172,7 @@
             </div>
         </div>
     </section>
-    <section id="contato" class="bg-light my-5 py-5">
+    <section id="chamada-contato" class="bg-light my-5 py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center my-5">
@@ -242,7 +242,40 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Contato</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
         
+        <div id="contato" class="visually-hidden">
+           <form action="" class="form">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+              <small id="helpNome" class="text-muted">Digite um nome válido</small>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu email" aria-describedby="helpEmail">
+              <small id="helpEmail" class="text-muted">Digite um email válido</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+           </form>
+        </div>
+        
+        <div id="sobre" class="visually-hidden">
+
+        </div>
+
         <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="./vendor/owl/js/owl.js"></script>
