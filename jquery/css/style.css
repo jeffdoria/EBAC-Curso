@@ -1,4 +1,9 @@
+:root {
+	--newgreen: #82b440;
+	--newgreenclear: #9ccc5d;
+	--newblack: #191919;
 
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	transition: all 0.5s;
@@ -20,7 +25,7 @@ a {
 }
 
 .main-button a {
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 	border-radius: 5px;
 	padding: 10px 15px;
 	display: inline-block;
@@ -41,7 +46,7 @@ a {
 }
 .section-heading .line-dec {
 	display: block;
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 	height: 5px;
 	width: 30px;
 }
@@ -54,7 +59,7 @@ a {
 
 /* Pre Header Style */
 #pre-header {
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 	text-align: center;
 }
 #pre-header span {
@@ -96,7 +101,7 @@ a {
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .show>.nav-link {
-	color: #5271FF;
+	color: var(--newgreen);
 }
 /* .navbar:after {
 	width: 100%;
@@ -111,8 +116,8 @@ a {
 	background-image: none;
 }
 .navbar-dark .navbar-toggler {
-	border-color: #5271FF;
-	background-color: #5271FF;	
+	border-color: var(--newgreen);
+	background-color: var(--newgreen);	
 	height: 50px;
 	outline: none;
 }
@@ -147,7 +152,7 @@ a {
 .banner .caption .line-dec {
 	width: 30px;
 	height: 5px;
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 }
 .banner .caption p {
 	margin-top: 15px;
@@ -180,7 +185,7 @@ div.zoom a {text-decoration: none;}
 }
 
 .featured-item h6 {
-	color: #5271FF;
+	color: var(--newgreen);
 	font-size: 15px;
 	font-weight: 700;
 	margin-bottom: 0px;
@@ -193,7 +198,7 @@ div.zoom a {text-decoration: none;}
 	outline: none;
 }
 .owl-theme .owl-dots .active span {
-	background-color: #5271FF!important;
+	background-color: var(--newgreen)!important;
 }
 .owl-theme .owl-dots .owl-dot span {
 	background-color: #aaa;
@@ -211,7 +216,7 @@ div.zoom a {text-decoration: none;}
 
 /* Subscribe Style */
 .subscribe-form {
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 	padding: 80px 0px;
 	text-align: center;
 }
@@ -258,7 +263,7 @@ div.zoom a {text-decoration: none;}
 	border-radius: 5px;
 	padding: 10px 15px;
 	display: inline-block;
-	color: #5271FF;
+	color: var(--newgreen);
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -300,7 +305,7 @@ div.zoom a {text-decoration: none;}
 	transition: all 0.5s;
 }
 .footer .footer-menu a:hover {
-	color: #5271FF;
+	color: var(--newgreen);
 	text-decoration: none;
 }
 .footer .social-icons {
@@ -322,7 +327,7 @@ div.zoom a {text-decoration: none;}
 	transition: all 0.5s;
 }
 .footer .social-icons a:hover {
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 }
 
 /* Sub Footer Style */
@@ -336,7 +341,7 @@ div.zoom a {text-decoration: none;}
 	line-height: 60px;
 }
 .sub-footer a {
-	color: #5271FF;
+	color: var(--newgreen);
 	text-decoration: none;
 }
 
@@ -361,14 +366,14 @@ div.zoom a {text-decoration: none;}
 	transition: all 0.5s;
 }
 .featured .featured-item:hover h4 {
-	color: #5271FF;
+	color: var(--newgreen);
 }
 #filter button {
 	outline: none;
 }
 #filter .btn-primary.focus,
 .btn-primary:focus {
-	color: #5271FF!important;
+	color: var(--newgreen)!important;
 	box-shadow: none!important;
 }
 #filters .btn-primary {
@@ -430,8 +435,8 @@ div.zoom a {text-decoration: none;}
 }
 .page-navigation ul li a:hover,
 .page-navigation ul li.current-page a {
-	background-color: #5271FF;
-	border-color: #5271FF;
+	background-color: var(--newgreen);
+	border-color: var(--newgreen);
 	color: #fff;
 }
 
@@ -458,7 +463,7 @@ div.zoom a {text-decoration: none;}
 	margin-top: 0px;
 }
 .single-product .right-content h6 {
-	color: #5271FF;
+	color: var(--newgreen);
 	font-size: 17px;
 	font-weight: 700;
 	margin-top: 10px;
@@ -469,7 +474,7 @@ div.zoom a {text-decoration: none;}
 }
 .single-product .right-content span {
 	font-size: 14px;
-	color: #5271FF;
+	color: var(--newgreen);
 	font-weight: 500;
 	display: inline-block;
 	margin-bottom: 15px;
@@ -494,7 +499,7 @@ div.zoom a {text-decoration: none;}
 .single-product .right-content .button {
 	margin-left: 15px;
 	cursor: pointer;
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 	outline: none;
 	border-radius: 5px;
 	padding: 10px 15px;
@@ -522,10 +527,10 @@ div.zoom a {text-decoration: none;}
 	transition: all 0.5s;
 }
 .single-product .right-content .down-content span a:hover {
-	color: #5271FF;
+	color: var(--newgreen);
 }
 .single-product .right-content .down-content span a:hover i {
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 }
 .single-product .right-content .down-content span a i {
 	transition: all 0.5s;
@@ -599,7 +604,7 @@ div.zoom a {text-decoration: none;}
 	font-weight: 400;
 }
 .about-page .right-content span a:hover i {
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 }
 
 
@@ -654,11 +659,11 @@ div.zoom a {text-decoration: none;}
 	font-weight: 400;
 }
 .contact-page .right-content span a:hover i {
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 }
 .contact-page .right-content .button {
 	cursor: pointer;
-	background-color: #5271FF;
+	background-color: var(--newgreen);
 	outline: none;
 	border-radius: 5px;
 	padding: 10px 15px;
@@ -673,7 +678,7 @@ div.zoom a {text-decoration: none;}
 	box-shadow: none;
 	border: none;
 }
-
+.invalid {border: 2px solid red;}
 /* Responsive Style */
 @media (max-width: 991px) {
 
@@ -688,7 +693,7 @@ div.zoom a {text-decoration: none;}
 		display: none;
 	}
 	#navbarResponsive {
-	    z-index: 99999;
+	    z-index: 10;
 	    position: absolute;
 	    top: 96px;
 	    width: 100%;

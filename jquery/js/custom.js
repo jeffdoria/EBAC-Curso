@@ -30,13 +30,13 @@ $(document).ready(function(){
     
     let destaques = $('#featured') // id
 
-    console.log(titulos.first());
+    console.log(titulos.first())
 
     // Configuração de produtos
 
-    $('.owl-nav').addClass('d-flex justify-content-evenly fs-1');
-    $('.featured-item').addClass('position-relative');
-    $('.featured-item a').addClass('btn btn-success d-grid gap-2');
+    $('.owl-nav').addClass('d-flex justify-content-evenly fs-1')
+    $('.featured-item').addClass('position-relative')
+    $('.featured-item a').addClass('btn btn-success d-grid gap-2')
     $('.featured-item:first').append('<div class="position-absolute top-0 start-0  m-2"><span class="badge bg-danger fs-6">Novo</span></div>')
     // $('.featured-item:first h4').start('<span class="badge bg-secondary">Novo</span>')
     // $('.featured-item:first h4').html('<span class="badge bg-secondary">Novo</span>')
@@ -55,18 +55,18 @@ $(document).ready(function(){
             'color': '#f00',
             'background': '#ff0',
             'font-weight': '100',
-        });
+        })
 
-     });
+     })
 
      /*
       * Manipulação de eventos
       */
      $('.featured-item a').on('blur', function(event){
 
-        event.preventDefault();
+        event.preventDefault()
 
-        alert('Produto esgotado');
+        alert('Produto esgotado')
 
      })
      
@@ -79,7 +79,7 @@ $(document).ready(function(){
 
     $('.nav-modal-open').on('click', function(e){
 
-        e.preventDefault();
+        e.preventDefault()
 
         let elem = $(this).attr('rel')
 
@@ -91,6 +91,84 @@ $(document).ready(function(){
 
         myModal.show() 
     })
+
+    function validate( elem ){
+        if( elem.val() == '') {
+  
+           console.log('o campo de '+ elem.attr('name') + ' é obrigatório')
+  
+           elem.parent().find('.text-muted').show()
+  
+           elem.addClass('invalid')
+  
+           return false
+        } else {
+           elem.parent().find('.text-muted').hide()
+           elem.removeClass('invalid')
+        }
+     }
+
+    $('body').on('submit', '.modal-body .form', function(e){
+
+        e.preventDefault()
+  
+        const inputName = $('#nome')
+        const inputEmail = $('#email')
+  
+        validate(inputName)
+        validate(inputEmail)
+  
+        if(inputEmail.hasClass('invalid') || inputName.hasClass('invalid')){
+           console.log('verificar campos obrigatórios')
+           return false
+        } else {
+           $(this).submit()  
+        }
+  
+     })
+
+     $('body').on('blur', '#nome', function(){
+        validate($(this))
+     })
+  
+     $('body').on('blur', '#email', function(){
+        validate($(this))
+     })
+  
+  
+     $('body').on('focus', '#date', function(){
+        $(this).datepicker()
+     })
+  
+     $('body').on('blur', '#date', function(){
+        validate($(this))
+        $(this).mask('00/00/0000');
+     }) 
+  
+     $('body').on('blur', '#time', function(){
+        validate($(this))
+        $(this).mask('00:00');
+     })
+  
+     $('body').on('blur', '#cep', function(){
+        validate($(this))
+        $(this).mask('00000-000');
+     })
+  
+     $('body').on('blur', '#phone', function(){
+        validate($(this))
+        $(this).mask('00000-0000');
+     })
+  
+     $('body').on('blur', '#cpf', function(){
+        validate($(this))
+        $(this).mask('000.000.000-00');
+     })
+  
+
+
+
+
 
 
 

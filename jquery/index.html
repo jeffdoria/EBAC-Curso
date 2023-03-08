@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/owl/css/owl.css">
     <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="/vendor/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,13 +16,13 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/images/header-logo.png" alt="Logo WebStore" width="180" height="40"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home
                         </a>
@@ -30,16 +31,16 @@
                         <a class="nav-link" href="index.html#produtos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="#" rel="sobre">Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="#" rel="contato">Contato</a>
+                        <a class="nav-link nav-modal-open" href="#contato" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>   
-    <div class="banner">
+    <section class="banner">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -51,9 +52,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div id="featured" class="featured-items">
+    </section>
+    <section id="featured" class="featured-items">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -140,7 +140,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <section id="sobre-nos">
         <div class="container">
             <div class="row">
@@ -196,9 +196,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-    <div class="footer">
+    </section> 
+    <section class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -210,10 +209,10 @@
                     <div class="footer-menu">
                         <ul>
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">Help</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">How It Works ?</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#">Termo de Privacidade</a></li>
+                            <li><a href="#">Como Funciona?</a></li>
+                            <li><a class="nav-link nav-modal-open" href="#contato" rel="contato">Entre em contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -229,56 +228,106 @@
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="sub-footer">
+    </section>
+    <section class="sub-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright-text">
                         <p>WebStore &copy; Todos os direitos reservados
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    </section>
+        
+        <!-- Modal -->
         <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalTitleId">Contato</h5>
+                        <h5 class="modal-title">Modal title</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                       
                     </div>
                 </div>
             </div>
         </div>
-        
         <div id="contato" class="visually-hidden">
-           <form action="" class="form">
-            <div class="mb-3">
-              <label for="nome" class="form-label">Nome</label>
-              <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
-              <small id="helpNome" class="text-muted">Digite um nome válido</small>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu email" aria-describedby="helpEmail">
-              <small id="helpEmail" class="text-muted">Digite um email válido</small>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-           </form>
+            <form action="post" class="form">
+    
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                  <small id="helpNome" class="text-muted">
+                    Digite um nome válido
+                  </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                    <small id="helpEmail" class="text-muted">
+                      Digite um e-mail válido
+                    </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="date" class="form-label">Data</label>
+                    <input type="text" name="date" id="date" class="form-control" placeholder="Digite uma data" aria-describedby="helpDate">
+                    <small id="helpDate" class="text-muted">
+                      Digite uma data válida
+                    </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="time" class="form-label">Hora</label>
+                    <input type="text" name="time" id="time" class="form-control" placeholder="Digite a hora" aria-describedby="helpHora">
+                    <small id="helpHora" class="text-muted">
+                      Digite um tempo valido
+                    </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu CEP" aria-describedby="helpCEP">
+                    <small id="helpCEP" class="text-muted">
+                      Digite um CEP valido
+                    </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Celular</label>
+                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu Celular" aria-describedby="helpCelular">
+                    <small id="helpCelular" class="text-muted">
+                      Digite um celular valido
+                    </small>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="cpf" class="form-label">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu CPF" aria-describedby="helpCPF">
+                    <small id="helpCPF" class="text-muted">
+                      Digite um CPF valido
+                    </small>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar</button>
+    
+            </form>
         </div>
         
         <div id="sobre" class="visually-hidden">
-
+teste
         </div>
 
         <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="./vendor/owl/js/owl.js"></script>
+        <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
+        <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
         <script src="./js/custom.js"></script>
     </body>
     </html>
