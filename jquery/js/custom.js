@@ -164,12 +164,4 @@ $(document).ready(function(){
         validate($(this))
         $(this).mask('000.000.000-00');
      })
-  
-
-
-
-
-
-
-
 })
