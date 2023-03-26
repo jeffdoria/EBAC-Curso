@@ -50,7 +50,7 @@ Todo o processo é executado a partir node.js e gulp-cli (linha de comando)
 - Diminuição do tamanho (bytes) de imagens
 
 ## Rodar o projeto
-- Executar o comando:
+- Executar o comando dentro da pasta /projeto:
 ```
 npm install
 ```
