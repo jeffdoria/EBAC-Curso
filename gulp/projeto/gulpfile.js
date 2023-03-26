@@ -8,8 +8,14 @@ const imagemin = require('gulp-imagemin');
 
 //css
 function tarefasCSS(cb) {
-    return gulp.src('./vendor/**/*.css')
-        .pipe(concat('libs.css'))
+    return gulp.src([
+        './node_modules/bootstrap/dist/css/bootstrap.css',
+        './vendor/owl/css/owl.css',
+        './node_modules/@fortawesome/fontawesome-free/css/all.css',
+        './vendor/jquery-ui/jquery-ui.css',
+        './src/css/style.css'
+        ])
+        .pipe(concat('styles.css'))
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min'})) //libs.min.css
         .pipe(gulp.dest('./dist/css'))
@@ -17,8 +23,14 @@ function tarefasCSS(cb) {
 
 //js
 function tarefasJS(){
-    return gulp.src('./vendor/**/*.js')
-        .pipe(concat('libs.js'))
+    return gulp.src([
+        './node_modules/bootstrap/dist/js/bootstrap.js',
+        './vendor/owl/js/owl.js',
+        './vendor/jquery-mask/jquery.mask.js',
+        './vendor/jquery-ui/jquery-ui.js',
+        './src/js/custom.js'
+    ])
+        .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min'})) //libs.min.js
         .pipe(gulp.dest('./dist/js'))
