@@ -1,4 +1,5 @@
 //list dependences
+const {series} = require('gulp');
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const cssmin = require('gulp-cssmin');
@@ -47,6 +48,17 @@ function tarefasImagem(){
     .pipe(gulp.dest('./dist/images'))
 }
 
+    //POC - Proof of Concept
+    function tarefasHTML(callback) {
+        gulp.src('./src/**/*.html')
+            .pipe((htmlmin({collapseWhitespace: true})))
+            .pipe(gulp.dest('./dist'))
+
+        return callback()
+
+    }
+
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
+exports.default = parallel(tarefasHTML, tarefasJS, tarefasCSS)
