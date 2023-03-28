@@ -1,11 +1,14 @@
 //list dependences
-const {series} = require('gulp');
+const {series, parallel} = require('gulp');
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const cssmin = require('gulp-cssmin');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
+const htmlmin = require('gulp-htmlmin');
+const babel = require('gulp-babel');
+
 
 //css
 function tarefasCSS(cb) {
@@ -20,26 +23,35 @@ function tarefasCSS(cb) {
         .pipe(cssmin())
         .pipe(rename({ suffix: '.min'})) //libs.min.css
         .pipe(gulp.dest('./dist/css'))
+
+        cb()
 }
 
 //js
-function tarefasJS(){
-    return gulp.src([
+function tarefasJS(callback){
+    gulp.src([
         './node_modules/bootstrap/dist/js/bootstrap.js',
         './vendor/owl/js/owl.js',
         './vendor/jquery-mask/jquery.mask.js',
         './vendor/jquery-ui/jquery-ui.js',
         './src/js/custom.js'
     ])
+
+        .pipe(babel({
+            comments:false,
+            presets: ['@babel/env']
+        }))
         .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min'})) //libs.min.js
         .pipe(gulp.dest('./dist/js'))
+
+        return callback()
 }
 
 //images
-function tarefasImagem(){
-    return gulp.src('./src/images/*.{jpg,png}')
+function tarefasImagem(callback){
+    gulp.src('./src/images/*.{jpg,png}')
     .pipe(imagemin([
         imagemin.mozjpeg({quality:80, progressive: true}),
         imagemin.optipng({optimizationLevel: 2}),
