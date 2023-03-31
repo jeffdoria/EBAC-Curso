@@ -13,9 +13,10 @@
         margin-top: $mt;
     }
     img {
+        
         width: 100%;
         height: auto;
-        margin: $space-default auto;
+        margin: 0;
     }
     p {
         font-size: $font-normal;
@@ -23,4 +24,23 @@
         padding: 2rem 0;
         width: 100%;
     }
+
+    figure{
+        position: relative;
+    }
+
+    .sub-titulo{
+        
+        position: absolute;
+        left: 0;
+        bottom:0;
+        background: rgb(2,0,36);
+        background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(7,8,9,0.5690651260504201) 99%);
+        padding: 1.5em;
+        color: white;
+        width: -webkit-fill-available;
+        text-align: center;
+        font-size: 1.5em;
+    }
 }
+

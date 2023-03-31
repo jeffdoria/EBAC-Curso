@@ -17,20 +17,24 @@
     }
 
     li {
+        background-color: whitesmoke;
+        border-radius: 15px;
         color: $color-02;
-        display: block;
-        margin: $space-default auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 0 1em;
         width: 30%;
-        
+
         .img-container {
             display: block;
-            height: 200px;
+            height: auto;
             overflow: hidden;
             width: 100%;
         }
 
         a {
-            background-color: $color-01;
+            background-color: $color-04;
             border-radius: 5px;
             color: white;
             display: block;

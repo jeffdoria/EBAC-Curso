@@ -1,0 +1,20 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    
+    ul {
+        display: flex;
+    }
+    
+    li {
+        padding: 0 1em;
+    }
+    
+     a {
+        color: $color-default;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    
+}

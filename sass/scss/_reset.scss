@@ -45,6 +45,7 @@ body {
     font-family: $font-family-default;
     font-size: $font-small;
     color: $color-default;
+    background-color: $bg-color;
 }
 
 p {
@@ -73,4 +74,8 @@ h3 {
 
 footer {
     background-color: $bg-color
+}
+
+ul {
+    list-style-type: none;
 }

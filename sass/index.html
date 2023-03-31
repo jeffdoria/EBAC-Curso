@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,59 +8,64 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Módulo Sass</title>
 </head>
+
 <body>
     <header>
-        <nav class="container">
+        <nav class="container nav">
+            <div>
+                
+                    <img src="./images/logo.png" alt="Logo Fiat nas cores verde, vermelho e branco">
+                
+            </div>
             <ul>
                 <li><a href="#novidades">Tudo sobre a <strong>Toro</strong></a></li>
+                <li><a href="#promocao">Promoção</a></li>
                 <li><a href="#versoes">Versões</a></li>
-                <li><a href="#versoes">Versões</a></li>
-                <li><a href="#fotos">Fotos</a></li>
             </ul>
-            <div >
-                <h4>Conheça a Fiat Toro</h4>
-            </div>
         </nav>
-        <div class="destack container-fluid">
+        <div class="destack container-fluid" id="novidades">
             <figure>
                 <img src="./images/pexels-mike-244206.jpg" alt="Foto Audi por Mike em Pexels">
-                <figcaption>Carro seminovo, 4 portas, completo com ar-condicionado, vidro e travas elelétricas.</figcaption>
+                <figcaption class="sub-titulo"><strong>TEM TUDO QUE VOCÊ PRECISA PARA UMA NOVA AVENTURA</strong>
+                </figcaption>
             </figure>
-            <div class="anuncio">
-<img src="./images/Fiat-tanque-cheio-banner-receptiva-desktop@2x.jpg" alt="">
+            <div class="anuncio" id="promocao">
+                <img src="./images/Fiat-tanque-cheio-banner-receptiva-desktop@2x.jpg" alt="">
             </div>
         </div>
     </header>
     <main>
-        <section>
-            <div class="">
-        
+        <div class="container" id="versoes">
+            <div class="blocks cars">
+                <h2>Ver Modelos</h2>
+                <ul>
+                    <li>
+                        <div class="img-container">
+                            <img src="./images/thumb-01.d71b87ae.png" alt="Foto Mike em Pexels">
+                        </div>
+                        <a href="#01">Ver mais</a>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <img src="./images/thumb-02.8269bfa1.png" alt="Foto Pixabay Pixels">
+                        </div>
+                        <a href="#02">Ver mais</a>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <img src="./images/thumb-03.a82c3a53.png" alt="Foto Pexels Torsten">
+                        </div>
+                        <a href="#03"> Ver mais</a>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <img src="./images/thumb-04.f2068e35.png" alt="Foto Pexels Torsten">
+                        </div>
+                        <a href="#03"> Ver mais</a>
+                    </li>
+                </ul>
             </div>
-            <div class="container">
-                <div class="blocks cars">
-                    <h2>Ver Carros</h2>
-                    <ul>
-                        <li>
-                            <div class="img-container">
-                                <img src="./images/pexels-mike-431950.jpg" alt="Foto Mike em Pexels">
-                            </div>
-                            <a href="#01">Ver mais</a>
-                        </li>
-                        <li>
-                            <div class="img-container">
-                                <img src="./images/pexels-pixabay-248747.jpg" alt="Foto Pixabay Pixels">
-                            </div>
-                            <a href="#02">Ver mais</a>
-                        </li>
-                        <li>
-                            <div class="img-container">
-                                <img src="./images/pexels-torsten-dettlaff-70912.jpg" alt="Foto Pexels Torsten">
-                            </div>
-                            <a href="#03"> Ver mais</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        </div>
         </section>
     </main>
     <footer>
@@ -68,4 +74,5 @@
         </div>
     </footer>
 </body>
+
 </html>
