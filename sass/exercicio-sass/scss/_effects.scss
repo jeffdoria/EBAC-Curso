@@ -1,0 +1,19 @@
+.zoom-inner {
+	overflow: hidden;
+
+	img {
+		max-width: 100%;
+		-moz-transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+
+	&:hover img {
+		-moz-transform: scale(1.2);
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+
+}
+
+  /* Fim Efeitos */

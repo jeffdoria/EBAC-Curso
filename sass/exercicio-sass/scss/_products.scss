@@ -1,0 +1,21 @@
+/* Produtos Style */
+.produtos-item {
+	transition: all 0.5s;
+
+	&:hover {
+		opacity: 0.9;
+	}
+	img {
+		width: 100%;
+	}
+	
+	h6 {
+		color: $secundary-color;
+		font-size: 15px;
+		font-weight: 700;
+		margin-bottom: 0px;
+	}
+	.produtos-content h3{
+		padding-bottom: .765em;
+	}
+}

@@ -1,0 +1,21 @@
+/* Card tipo */
+@mixin card-config() {
+	background-position: center;
+	background-size:cover;
+	max-width: 100%;
+	height: 15.25em;
+	color: white;
+}
+
+	.card-tipo-1{
+		background-image: url(../images/masculino.jpg);
+		@include card-config;
+	}	
+	.card-tipo-2{
+		background-image: url(../images/feminino.jpg);
+		@include card-config;
+	}
+	.card-tipo-3{
+		background-image: url(../images/crianca.jpg);
+		@include card-config;
+	}
