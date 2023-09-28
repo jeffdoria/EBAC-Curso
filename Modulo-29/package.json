@@ -9,6 +9,7 @@
   "author": "Jefferson Doria Santos",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.3.2"
+    "bootstrap": "^5.3.2",
+    "http-server": "^14.1.1"
   }
 }
